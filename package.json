@@ -4,7 +4,9 @@
   "description": "A js opensource demo studying",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "nyc mocha",
+    "watch:test": "mocha --watch"
   },
   "keywords": [
     "jindo",
@@ -21,6 +23,24 @@
   },
   "homepage": "https://github.com/thanhlam1998/js-library-studying#readme",
   "dependencies": {
-    "unique-random-array": "^3.0.0"
+    "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-kentcdodds": "^19.1.1",
+    "mocha": "^3.0.0",
+    "nyc": "7.1.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100,
+    "reporter": [
+      "text",
+      "lcov"
+    ]
   }
 }
