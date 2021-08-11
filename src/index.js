@@ -6,9 +6,4 @@ var starWarsNames = require("./starwar-names.json");
 module.exports = {
   all: starWarsNames,
   random: uniqueRandomArray(starWarsNames),
-  foobar: foobar,
 };
-
-function foobar() {
-  return "foobar";
-}
