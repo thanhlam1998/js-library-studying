@@ -6,14 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "jindo",
+    "star"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thanhlam1998/js-library-studying.git"
   },
   "author": "Thanh Lam",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/thanhlam1998/js-library-studying/issues"
   },
-  "homepage": "https://github.com/thanhlam1998/js-library-studying#readme"
+  "homepage": "https://github.com/thanhlam1998/js-library-studying#readme",
+  "dependencies": {
+    "unique-random-array": "^3.0.0"
+  }
 }
