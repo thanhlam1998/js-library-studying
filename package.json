@@ -41,6 +41,9 @@
     "reporter": [
       "text",
       "lcov"
+    ],
+    "include": [
+      "src"
     ]
   }
 }
