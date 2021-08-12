@@ -1,6 +1,6 @@
 {
   "name": "js-opensource-starwars",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A js opensource demo studying",
   "main": "dist/index.js",
   "scripts": {
