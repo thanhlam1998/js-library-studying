@@ -11,6 +11,7 @@ export default {
     library: "starWarsNames",
   },
   devtool: "source-map",
+  externals: ["unique-random-array"],
   module: {
     loaders: [
       { test: /\.js$/, loaders: ["babel"], include: context },
