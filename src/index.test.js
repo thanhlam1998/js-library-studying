@@ -1,23 +1,20 @@
-const expect = require("chai").expect;
+import { expect } from "chai";
 const starWarsNames = require(".");
 
-describe("starwars-name", function () {
-  it("should have a list of all available name", function () {
-    expect(starWarsNames.all).to.satisfy(isArrayOfString);
+describe("starwars-names", () => {
+  it("should have a list of all available names", () => {
+    expect(starWarsNames.all).to.satisfy(isArrayOfStrings);
   });
-  it("should allow me to get a random name from the list", function () {
-    expect(starWarsNames.random()).to.satisfy(isIncludeIn(starWarsNames.all));
+
+  it("should allow me to get a random name from the list", () => {
+    expect(starWarsNames.random()).to.satisfy(isIncludedIn(starWarsNames.all));
   });
 });
 
-function isArrayOfString(array) {
-  return array.every(function (i) {
-    return typeof i === "string";
-  });
+function isArrayOfStrings(array) {
+  return array.every((i) => typeof i === "string");
 }
 
-function isIncludeIn(array) {
-  return function (item) {
-    return array.includes(item);
-  };
+function isIncludedIn(array) {
+  return (item) => array.includes(item);
 }
