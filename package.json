@@ -1,6 +1,6 @@
 {
   "name": "js-opensource-starwars",
-  "version": "2.0.0",
+  "version": "0.0.0-development",
   "description": "A js opensource demo studying",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "watch:test": "mocha --watch",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "lint": "eslint src",
-    "validate": "npm-run-all --parallel test lint build"
+    "validate": "npm-run-all --parallel test lint build",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "jindo",
@@ -21,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thanhlam1998/js-library-studying.git"
+    "url": "https://github.com/thanhlam1998/js-library-studying.git"
   },
   "author": "Thanh Lam",
   "license": "MIT",
@@ -52,6 +53,7 @@
     "npm-run-all": "2.3.0",
     "nyc": "7.1.0",
     "rimraf": "2.5.4",
+    "semantic-release": "^17.4.4",
     "webpack": "1.13.1"
   },
   "nyc": {
