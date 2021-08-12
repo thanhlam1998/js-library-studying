@@ -1,7 +1,5 @@
-"use strict";
-
-var expect = require("chai").expect;
-var starWarsNames = require(".");
+const expect = require("chai").expect;
+const starWarsNames = require(".");
 
 describe("starwars-name", function () {
   it("should have a list of all available name", function () {
